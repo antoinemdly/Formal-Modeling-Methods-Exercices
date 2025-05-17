@@ -1,0 +1,51 @@
+stages:
+  - build
+  - test
+  - grade
+
+default:
+  image: mcr.microsoft.com/dotnet/sdk:7.0
+
+.standard-rules:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+
+build-job:
+  extends:
+    - .standard-rules
+  stage: build
+  script:
+    - dotnet build
+  artifacts:
+    paths:
+      - "Homework/bin"
+      - "Homework.Test/bin"
+
+test-job:
+  stage: test
+  extends:
+    - .standard-rules
+  dependencies:
+    - build-job
+  script:
+    - bash -c "dotnet test --logger 'console;verbosity=normal' | tee test-report.txt"
+  artifacts:
+    paths:
+      - test-report.txt
+
+grade-job:
+  stage: grade
+  image: curlimages/curl:latest
+  extends:
+    - .standard-rules
+  dependencies:
+    - test-job
+  script:
+    - "grade=\"$(awk -v FS='Passed: ' 'NF>1{print $2}' test-report.txt)\""
+    - if [ -z "$grade" ]; then grade="0"; fi
+    - |
+      curl "$CI_API_V4_URL/projects/$CI_PROJECT_ID/merge_requests/$CI_MERGE_REQUEST_IID/notes" \
+        -X POST \
+        -H "PRIVATE-TOKEN: $GRADE_BOT_TOKEN" \
+        -F "body=Grade: $grade."
+    - "echo \"Grade: $grade.\""

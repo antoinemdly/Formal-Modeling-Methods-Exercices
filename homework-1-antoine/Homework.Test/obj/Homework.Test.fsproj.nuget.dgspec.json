@@ -1,0 +1,165 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework.Test/Homework.Test.fsproj": {}
+  },
+  "projects": {
+    "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework.Test/Homework.Test.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework.Test/Homework.Test.fsproj",
+        "projectName": "Homework.Test",
+        "projectPath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework.Test/Homework.Test.fsproj",
+        "packagesPath": "/Users/antoine/.nuget/packages/",
+        "outputPath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antoine/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/8.0.401/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj": {
+                "projectPath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj"
+              }
+            }
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.400, )",
+              "generatePathProperty": true
+            },
+            "FsUnit.xUnit": {
+              "target": "Package",
+              "version": "[5.0.3, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )",
+              "generatePathProperty": true
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.2, )",
+              "generatePathProperty": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )",
+              "generatePathProperty": true
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj",
+        "projectName": "Homework",
+        "projectPath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj",
+        "packagesPath": "/Users/antoine/.nuget/packages/",
+        "outputPath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/antoine/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/8.0.401/FSharp/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[8.0.400, )",
+              "generatePathProperty": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

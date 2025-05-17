@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YAAUFKqxTZo=",
+  "success": true,
+  "projectFilePath": "/Users/antoine/Library/CloudStorage/OneDrive-Personal/UNIGE/Outils Formels de modélisation/Rendu TP Antoine/homework-1-antoine/Homework/Homework.fsproj",
+  "expectedPackageFiles": [
+    "/Users/antoine/.nuget/packages/fsharp.core/8.0.400/fsharp.core.8.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}
